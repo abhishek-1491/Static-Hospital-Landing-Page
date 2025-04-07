@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+</head>
+<style>
+    body {
+        background-color: aqua;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: lightblue;
+    }
+
+    nav ul li {
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        padding-right: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/banner-bg.jpg);
+        margin-top: -45px;
+
+    }
+
+    strong h1 {
+        padding: 20%;
+        font-size: 70px;
+        padding-left: 12%;
+        padding-top: 17%;
+        color: black;
+        text-shadow: 1px 1px 2px black, 0 0 25px #FEE715, 0 0 5px #FEE715;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        float: left;
+    }
+
+    .section {
+        width: 50%;
+        height: 100vh;
+        float: left;
+    }
+
+    .section img {
+        width: 75%;
+        height: 80vh;
+        padding: 70px;
+        border-radius: 50%;
+    }
+
+    .section h2 {
+        font-size: 70px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .section p {
+        text-align: justify;
+        margin: 30px 35px;
+        font-size: 20px;
+        /* padding-top: 20px; */
+    }
+
+    /* .card-section{
+        width: 100%;
+        height: 100vh;
+        background-color: blueviolet;
+    } */
+    .gallery:after {
+        content: "";
+        display: table;
+        clear: both;
+        float: left;
+    }
+
+    .gallery {
+        width: 100%;
+        height: 200vh;
+        /* background-color: blueviolet; */
+        /* float: left; */
+    }
+    .gallery h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .cards {
+        width: 30%;
+        height: 80vh;
+        background-color: aliceblue;
+        float: left;
+        margin-top: 75px;
+        margin-left: 35px;
+        border-radius: 20px;
+        /* text-align: center; */
+
+    }
+    .cards ul li {
+
+        margin-top: 25px;
+        /* text-align: center; */
+        margin-left: 80px;
+        font-size: 20px;
+    }
+
+    .cards h1 {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .card-list-item{
+        padding-top: 30px;
+    }
+
+    hr {
+        width: 70%;
+        height: 3px;
+        background-color: black;
+        border: 1px solid black;
+    }
+    .card-btn{
+        margin-top: 70px;
+        margin-left: 150px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        
+    }
+    .card-btn:hover{
+        cursor: pointer;
+        background-color: #c07d93;
+        
+    }
+
+    footer {
+        width: 100%;
+        height: 310px;
+        background-color: lightgray;
+    }
+
+    .contact-section {
+        width: 100%;
+        height: 100vh;
+        font-size: large;
+    }
+
+    .contact-box {
+        background-color: lightpink;
+        width: 35%;
+        height: 80vh;
+        margin: 11% 35%;
+        /* margin-top: 13%; */
+        border-radius: 50px;
+        box-shadow: 1px 1px 2px black, 0 0 25px #FEE715, 0 0 5px #FEE715;
+    }
+
+    .form-content {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    input,
+    textarea {
+        margin: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #c07d93;
+        border-radius: 10px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(158, 158, 201);
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        padding: 5px 15px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 2px black, 0 0 25px #FEE715, 0 0 5px #FEE715;
+
+    }
+
+    .footer-column {
+        width: 33%;
+        height: 300px;
+        float: left;
+        padding-top: 45px;
+    }
+
+    .footer-column ul li {
+        list-style: none;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav>
+        <a href="">
+            <h1>Hospital Management System</h1>
+        </a>
+        <ul>
+            <li class="nav-list"><a href="#home">Home</a></li>
+            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="#gall">Gallery</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner  -->
+    <div class="banner" id="home">
+        <strong>
+            <h1>Hospital Management System</h1>
+        </strong>
+    </div>
+
+    <!-- About Section  -->
+
+    <div class="row" id="about">
+        <div class="section">
+            <img src="images/doctor.png" alt="">
+        </div>
+        <div class="section">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus, quisquam aperiam, quos ab
+                commodi ipsa perferendis veritatis molestias tempora dolorem accusamus labore ipsam vel ducimus earum
+                expedita reprehenderit possimus qui repellat praesentium, sed error autem. Quibusdam saepe mollitia
+                facere ea alias blanditiis fuga voluptatum debitis porro. Numquam, eligendi libero.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta a repellat nostrum temporibus
+                tempora incidunt placeat eaque sed ad facilis amet velit eos, aliquid nobis perferendis tenetur quidem
+                autem quibusdam doloremque veritatis modi animi! Praesentium repellat minus modi necessitatibus est, id
+                illum, minima non, quod ipsum blanditiis aut amet.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Gallery Section  -->
+
+    <div class="gallery" id="gall">
+        <h1>SERVICES</h1>
+        <div class="cards">
+            <h1> CARD 1</h1>
+            <hr>
+            <ul>
+                <div class="card-list-item">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </div>
+            </ul>
+            <button class="card-btn">Know More</button>
+        </div>
+        <div class="cards">
+            <h1>CARD 2</h1>
+            <hr>
+            <ul>
+                <div class="card-list-item">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </div>
+            </ul>
+            <button class="card-btn">Know More</button>
+        </div>
+        <div class="cards">
+            <h1>CARD 3</h1>
+            <hr>
+            <ul>
+                <div class="card-list-item">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </div>
+            </ul>
+            <button class="card-btn">Know More</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="contact-section" id="contact">
+        <div class="contact-box">
+            <form action="" class="form-content">
+                <h4 style="font-size: 30px;">Contact Form</h4>
+                <label>Name </label><br>
+                <input type="text" name="name" placeholder="Enter Your Name"><br>
+                <label>Email </label><br>
+                <input type="text" name="name" placeholder="Enter Your Name"><br>
+                <label>Mobile Number</label><br>
+                <input type="text" name="name" placeholder="Enter Your Name"><br>
+                <label style="margin-top: 20px;">Description</label><br>
+                <textarea name="description" id="" cols="30" rows="3" placeholder="Enter Description"></textarea><br>
+                <input type="button" value="Submit" class="btn">
+                <input type="reset" value="Reset" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <footer class="page-end">
+        <div class="row">
+            <div class="footer-column">
+                <ul>
+                    <li class="footer-list-item"><a href="#home">Home</a></li>
+                    <li class="footer-list-item"><a href="#about">About</a></li>
+                    <li class="footer-list-item"><a href="#gallery">Gallery</a></li>
+                    <li class="footer-list-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li class="footer-list-item"><a href="">LinkedIn</a></li>
+                    <li class="footer-list-item"><a href="">Facebook</a></li>
+                    <li class="footer-list-item"><a href="">Instagram</a></li>
+                    <li class="footer-list-item"><a href="">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li class="footer-list-item">Address : Pune, Maharashtra</li>
+                    <li class="footer-list-item">Mobile No : 9527974938</li>
+                    <li class="footer-list-item">Email : hingmireabhishek250@gmail.com</li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
